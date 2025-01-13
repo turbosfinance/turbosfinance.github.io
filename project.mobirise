@@ -1,0 +1,152 @@
+{
+  "settings": {
+    "name": "turbos finance",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#ffffff",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#091326"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/turbos-finance_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://turbosfinance.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://turbosfinance.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "owebyuidyw",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Turbos Finance : Ultra-Efficient DEX on the Sui Blockchain",
+        "meta_descr": "Turbos Finance is a decentralized exchange (DEX) that allows users to trade, earn, and bridge tokens on the Sui blockchain. It also offers yield strategy, live stats, and grand prix features for Sui projects and communities.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/turbos-finance.png\" alt=\"turbos finance\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uzJIkqhF52",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#edefeb"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#091326\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#091326\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Turbo Finance: Accelerating DeFi with Innovative Liquidity Solutions</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  The decentralized finance (DeFi) landscape has rapidly evolved over the past few years, offering innovative solutions that challenge traditional financial systems. <a href=\"https://turbosfinance.github.io/\" class=\"text-primary\"><b>Turbos Finance</b></a> is one of the emerging players in this space, aiming to enhance liquidity and trading efficiency through its unique approach to decentralized exchanges and automated market making. This blog will explore the features, benefits, and implications of <a href=\"https://turbos.finance/\" class=\"text-primary\">Turbos Finance</a>, as well as its role in the broader DeFi ecosystem.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Turbo Finance?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Turbo Finance is a decentralized finance platform designed to provide users with efficient trading and liquidity solutions. By utilizing automated market-making (AMM) and innovative liquidity pools, Turbo Finance aims to create a seamless experience for users looking to trade and earn rewards on their digital assets. The platform focuses on optimizing liquidity while minimizing slippage and transaction costs, making it an attractive option for traders and liquidity providers.<br><br><b>Key Features of Turbo Finance</b><br>Automated Market Making (AMM): Turbo Finance employs an AMM model that allows users to trade assets without relying on traditional order books. This mechanism facilitates instant trading while ensuring that liquidity is always available.<br>Dynamic Liquidity Pools: The platform features dynamic liquidity pools that adjust to market conditions. This adaptability helps minimize slippage and ensures that users receive competitive prices when trading.<br>Yield Farming Opportunities: Turbo Finance incentivizes users to provide liquidity by offering yield farming opportunities. Users can stake their assets in liquidity pools to earn rewards, enhancing the overall yield on their investments.<br>Cross-Chain Compatibility: Turbo Finance aims to support multiple blockchain networks, enabling users to access its services across various platforms. This cross-chain functionality enhances the platform's reach and usability.<br>User-Friendly Interface: The platform is designed with a focus on user experience, offering an intuitive interface that simplifies the process of trading and providing liquidity.<br>Community Governance: Turbo Finance emphasizes community involvement, allowing users to participate in governance decisions that shape the platform's future. This approach fosters a sense of ownership among users.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How Turbo Finance Works</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">To understand how Turbo Finance operates, it’s essential to explore the mechanics behind its features. Here’s a step-by-step breakdown of the user experience:<br><br>Step 1: Connecting a Wallet<br>Users begin by connecting a compatible cryptocurrency wallet, such as MetaMask or Trust Wallet, to the Turbo Finance platform. This connection allows users to manage their assets and interact with the platform seamlessly.<br><br>Step 2: Providing Liquidity<br>Once connected, users can choose to provide liquidity by depositing their assets into Turbo Finance's liquidity pools. By doing so, they contribute to the platform's overall liquidity and earn rewards based on their contributions.<br><br>Step 3: Trading Assets<br>Turbo Finance’s AMM model enables users to trade assets without relying on an order book. Users can select the assets they wish to trade, and the platform will automatically determine the best price based on the available liquidity in the pools.<br><br>Step 4: Yield Farming<br>Users can stake their liquidity provider (LP) tokens in yield farming opportunities to earn additional rewards. By participating in yield farming, users can maximize their returns while contributing to the platform's liquidity.<br><br>Step 5: Monitoring Performance<br>Users can track their investments and monitor the performance of their liquidity positions through the Turbo Finance dashboard. This feature provides insights into returns, yields, and overall portfolio performance.<br><br>Step 6: Participating in Governance<br>As part of its community governance model, Turbo Finance allows users to vote on proposals and decisions that impact the platform. This participation empowers users to shape the direction of Turbo Finance.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Using Turbo Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Turbo Finance offers a range of advantages that make it an appealing choice for users in the DeFi ecosystem:<br><br>1. Enhanced Liquidity<br>By utilizing an AMM model and dynamic liquidity pools, Turbo Finance enhances liquidity within the platform. Users can trade assets with minimal slippage, ensuring competitive prices.<br><br>2. Capital Efficiency<br>The platform's innovative liquidity solutions allow users to maximize the efficiency of their capital. By providing liquidity and participating in yield farming, users can earn rewards while maintaining exposure to their assets.<br><br>3. Accessibility<br>Turbo Finance democratizes access to liquidity and trading, making it easier for individuals to engage with DeFi. The user-friendly interface simplifies the onboarding process for newcomers to the ecosystem.<br><br>4. Diverse Investment Opportunities<br>The platform provides a variety of trading and yield farming options, allowing users to diversify their investment strategies. This diversity enables users to tailor their portfolios to their risk tolerance and financial goals.<br><br>5. Community-Driven Development<br>Turbo Finance emphasizes community involvement, encouraging users to participate in governance decisions. This community-driven approach fosters a sense of ownership and engagement among users.<br><br>6. Cross-Chain Functionality<br>With its commitment to cross-chain compatibility, Turbo Finance allows users to access its services across multiple blockchain networks, expanding the platform's reach and usability.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Turbo Finance in the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Turbo Finance plays a vital role in the broader DeFi landscape by addressing several key challenges and opportunities:<br><br>1. Improving Trading Efficiency<br>By utilizing an AMM model and dynamic liquidity pools, Turbo Finance enhances trading efficiency. Users can trade assets quickly and at competitive prices, reducing friction in the trading process.<br><br>2. Promoting Financial Inclusion<br>Turbo Finance democratizes access to trading and liquidity solutions, enabling individuals from diverse backgrounds to participate in the DeFi ecosystem. This inclusivity promotes financial literacy and empowers users to take control of their financial futures.<br><br>3. Supporting Innovation<br>As a platform that prioritizes liquidity and trading efficiency, Turbo Finance encourages innovation within the DeFi space. By providing tools for developers and users, the platform supports the creation of new financial products and services.<br><br>4. Enhancing Market Liquidity<br>The AMM model and dynamic liquidity pools contribute to enhanced market liquidity. This liquidity is essential for the overall health of the DeFi ecosystem, enabling users to trade assets efficiently.<br><br>5. Facilitating Risk Management<br>Turbo Finance offers a variety of trading and yield farming options, allowing users to implement risk management strategies. By diversifying their portfolios and utilizing liquidity solutions, users can hedge against market volatility.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges Facing Turbo Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">While Turbo Finance presents numerous opportunities, it also faces several challenges that could impact its growth and adoption:<br><br>1. Regulatory Uncertainty<br>The DeFi space is subject to evolving regulatory scrutiny, which could affect the operation of Turbo Finance and similar platforms. Navigating this regulatory landscape is crucial for long-term success.<br><br>2. Security Concerns<br>As with any DeFi platform, security remains a top priority. Vulnerabilities and exploits can pose risks to user funds. Turbo Finance must continually enhance its security measures to protect against potential threats.<br><br>3. Market Competition<br>The DeFi space is highly competitive, with numerous platforms vying for user attention. Turbo Finance must differentiate itself by offering unique features and superior user experiences.<br><br>4. User Education<br>Educating users about AMM, liquidity provision, and yield farming is essential for widespread adoption. Turbo Finance must invest in user education initiatives to ensure newcomers understand its offerings.<br><br>5. Network Congestion<br>As Turbo Finance grows in popularity, network congestion could become an issue, affecting transaction speeds and user experience. The platform must explore solutions to mitigate these challenges.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Turbo Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The future of Turbo Finance appears promising, with several trends and developments to watch for:<br><br>1. Expansion of Liquidity Pools<br>Turbo Finance may expand its liquidity pool offerings to include a broader range of assets and trading pairs. This expansion could attract more users and enhance the platform's value proposition.<br><br>2. Enhanced User Experience<br>Ongoing improvements to the platform's user interface and user experience will be crucial for attracting and retaining users. Simplifying the onboarding process and providing educational resources can enhance accessibility.<br><br>3. Partnerships and Integrations<br>Collaborations with other DeFi projects, protocols, and platforms could enhance Turbo Finance's ecosystem. Strategic partnerships may lead to innovative features and expanded market reach.<br><br>4. Community Governance<br>As the platform matures, Turbo Finance may implement a decentralized governance model, allowing users to participate in decision-making processes. This community-driven approach can foster engagement and loyalty.<br><br>5. Focus on Sustainability<br>As DeFi continues to grow, sustainability will become increasingly important. Turbo Finance may explore eco-friendly practices and solutions to minimize its environmental impact.<br><br>6. Regulatory Adaptation<br>Navigating the evolving regulatory landscape will be crucial for Turbo Finance. The platform must proactively adapt to regulatory changes while maintaining its core values of decentralization and accessibility.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Getting Started with Turbo Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">If you’re interested in exploring Turbo Finance, here’s a step-by-step guide to get you started:<br><br>Step 1: Set Up a Cryptocurrency Wallet<br>Choose a compatible cryptocurrency wallet, such as MetaMask or Trust Wallet. Install the wallet and create an account if you don’t already have one.<br><br>Step 2: Fund Your Wallet<br>Purchase Ethereum (ETH) or other supported assets from a centralized exchange and transfer them to your wallet. Ensure you have enough funds to cover transaction fees.<br><br>Step 3: Visit Turbo Finance<br>Navigate to the official Turbo Finance website. Ensure you are on the legitimate site to avoid phishing attempts.<br><br>Step 4: Connect Your Wallet<br>Click on the \"Connect Wallet\" button and follow the prompts to connect your wallet securely.<br><br>Step 5: Provide Liquidity<br>If you wish to participate in liquidity provision, select a liquidity pool and deposit your assets. Monitor your contributions and rewards through the platform's dashboard.<br><br>Step 6: Engage in Yield Farming<br>Consider staking your liquidity provider (LP) tokens in yield farming opportunities to earn additional rewards. Review the details of each opportunity to assess potential returns.<br><br>Step 7: Stay Informed<br>Keep up to date with the latest developments in the Turbo Finance ecosystem by following official announcements, community forums, and social media channels.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Turbo Finance represents a significant advancement in the DeFi landscape, providing innovative liquidity solutions that enhance capital efficiency and democratize access to trading. By utilizing automated market-making and dynamic liquidity pools, Turbo Finance empowers users to trade and earn rewards on their digital assets.<br><br>As the DeFi ecosystem continues to evolve, Turbo Finance is well-positioned to address challenges and seize opportunities. With a focus on user experience, community engagement, and innovation, Turbo Finance is paving the way for a more inclusive and efficient financial landscape.<br><br>Whether you are a developer, investor, or casual user, Turbo Finance offers a pathway to explore the potential of DeFi and participate in the dynamic world of decentralized finance. As you embark on your journey in the DeFi space, Turbo Finance can be your gateway to discovering new opportunities and unlocking the value of your digital assets.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uzJIkKi75x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
